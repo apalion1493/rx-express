@@ -15,3 +15,13 @@ jQuery(function ($) {
 $(document).ready(function() {
     $('.rx-express-facts__slider').hScroll(60); // You can pass (optionally) scrolling amount
 });
+
+
+$(window).width(function() {
+    if(document.documentElement.clientWidth < 767.98) {
+        $(".rx-express-header__main-imgHuman-blockLeft img").remove();
+        $(".rx-express-header__main-imgHuman-blockRight img").remove();
+        $('.rx-express-header__main-imgHuman-blockLeft').append('<img class="rx-express-header__main-imgHuman-img rx-express-header__main-imgHuman-left" src="img/hipster-mobil.png" alt="">');
+        $('.rx-express-header__main-imgHuman-blockRight').append('<img class="rx-express-header__main-imgHuman-img rx-express-header__main-imgHuman-left" src="img/banker-mobil.png" alt="">');
+    }
+});
