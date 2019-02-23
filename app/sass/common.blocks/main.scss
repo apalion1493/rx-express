@@ -804,9 +804,9 @@
 }
 
 .rx-express-facts__slider {
-  overflow-y: visible;
-  overflow-x: auto;
-  padding-bottom: 75px;
+  //overflow-y: visible;
+  //overflow-x: auto;
+  padding-bottom: 30px !important;
 
   //&::-webkit-scrollbar {
   //  max-width: 1137px;

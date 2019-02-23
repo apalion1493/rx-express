@@ -1,0 +1,146 @@
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+
+.rx-express-about-us {
+  padding-bottom: 54px;
+}
+
+.rx-express-about-us__h1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: center;
+  color: #272d37;
+  display: block;
+  margin-bottom: 50px;
+}
+
+.rx-express-about-us__left-block {
+  border: 1px solid #e5e8eb;
+  height: 100%;
+  padding: 43px 26px 40px 31px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rx-express-about-us__left-block-textItalic {
+
+  p {
+    font-size: 18px;
+    font-style: italic;
+    line-height: 26px;
+    color: #525252;
+  }
+}
+
+.rx-express-about-us__left-block-textBottom {
+
+  span {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #585b60;
+  }
+
+  p {
+    color: #828282;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-bottom: 0;
+  }
+}
+
+.rx-express-about-us__right-block {
+  background-color: #eceef1;
+  padding: 25px 33px 46px 24px;
+
+  p {
+    margin-bottom: 0;
+    color: #525252;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+}
+
+.rx-express-about-us__h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #525252;
+}
+
+.rx-express-about-us__bottom-container {
+  padding: 34px 36px 27px 16px;
+  background-color: #272d37;
+  color: #ffffff;
+
+  h4 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .rx-express-about-us__first-container {
+    margin-left: 0 !important;
+
+    .col-lg-4 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .rx-express-about-us__bottom-container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .rx-express-about-us__right-block {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .rx-express-about-us__h1 {
+    font-size: 20px;
+  }
+
+  .rx-express-about-us__left-block-textItalic p {
+    font-size: 14px;
+  }
+
+  .rx-express-about-us__left-block-textBottom span {
+    font-size: 14px;
+  }
+
+  .rx-express-about-us__left-block-textBottom p {
+    font-size: 12px;
+  }
+
+  .rx-express-about-us__h4 {
+    font-size: 18px;
+  }
+
+  .rx-express-about-us__right-block p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .rx-express-about-us__bottom-container h4 {
+    font-size: 18px;
+  }
+
+  .rx-express-about-us__bottom-container p {
+    font-size: 12px;
+    line-height: 24px;
+  }
+}

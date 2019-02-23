@@ -28,29 +28,3 @@ $(window).width(function() {
         $('.rx-express-header__main-comments').append('<img class="rx-express-header__main-comments-right" src="img/right-comment__mobil.png" alt="">');
     }
 });
-
-
-
-
-// 3. Style a DIV and change cursor color:
-$(function() {
-    $(".rx-express-facts__slider").niceScroll({cursorcolor:"#272d37"});
-});
-
-// 4. DIV with "wrapper", formed by two divs, the first is the vieport, the latter is the content:
-$(function() {
-    $("#viewportdiv").niceScroll("#wrapperdiv",{cursorcolor:"#00F"});
-});
-
-// 5. Get nicescroll object:
-var nice = $(".rx-express-facts__slider").getNiceScroll();
-
-// 6. Hide scrollbars:
-$(".rx-express-facts__slider").getNiceScroll().hide();
-
-// 7. Check for scrollbars resize (when content or position have changed):
-$(".rx-express-facts__slider").getNiceScroll().resize();
-
-// 8. Scrolling to a position:
-$(".rx-express-facts__slider").getNiceScroll(0).doScrollLeft(x, duration); // Scroll X Axis
-$(".rx-express-facts__slider").getNiceScroll(0).doScrollTop(y, duration); // Scroll Y Axis
