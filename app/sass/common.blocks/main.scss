@@ -214,6 +214,8 @@
 
 .rx-express-human {
   padding-top: 79px;
+  background-color: #f5f6f7;
+  padding-bottom: 73px;
 }
 
 .rx-express-human__h2 {
@@ -227,7 +229,6 @@
 .rx-express-human__container {
   position: relative;
   border-bottom: 1px solid #c6c6c6;
-  margin-bottom: 73px;
 }
 
 .rx-express-human__img-man {
@@ -325,6 +326,10 @@
 }
 
 ///////////// rx-express-ordinaryMoney
+
+.rx-express-ordinaryMoney {
+  background-color: #f5f6f7;
+}
 
 .rx-express-ordinaryMoney__h2 {
   font-size: 36px;
@@ -521,6 +526,7 @@
 .rx-express-using {
   padding-top: 83px;
   padding-bottom: 88px;
+  background-color: #f5f6f7;
 }
 
 .rx-express-using__h2 {
@@ -532,6 +538,7 @@
 }
 
 .rx-express-using__list {
+  background: #ffffff;
   padding: 52px 62px 69px 47px;
   margin-top: 77px;
 
@@ -553,6 +560,7 @@
     list-style-type: none;
     position: relative;
     margin-bottom: 60px;
+    height: 45px;
 
     &:after {
       content: '';
@@ -561,7 +569,7 @@
       height: 44px;
       background-color: #e5e8eb;
       left: -34px;
-      bottom: -57px;
+      bottom: -50px;
     }
   }
 
@@ -602,8 +610,6 @@
       display: none;
     }
   }
-  
-
 
   p {
     margin-bottom: 0;
@@ -645,7 +651,7 @@
     height: 44px;
     background-color: #545a64;
     left: -34px;
-    bottom: -57px;
+    bottom: -50px;
   }
 }
 
@@ -683,7 +689,7 @@
   margin-top: 40px;
   margin-bottom: 36px;
 
-  span {
+  span:last-child {
     position: relative;
     top: 4px;
   }
@@ -711,28 +717,28 @@
   color: #ffffff;
   padding-top: 50px;
   padding-bottom: 47px;
+
+  ul {
+    li {
+      list-style-type: none;
+      height: 28px;
+      a {
+        color: #74787f;
+
+        &:hover {
+          color: #74787f;
+        }
+      }
+      &:first-child a {
+        color: #e7e7e7;
+      }
+    }
+  }
 }
 
 .rx-express-footer__list {
   display: flex;
   justify-content: space-between;
-}
-
-ul {
-  li {
-    list-style-type: none;
-    height: 28px;
-    a {
-      color: #74787f;
-
-      &:hover {
-        color: #74787f;
-      }
-    }
-    &:first-child a {
-      color: #e7e7e7;
-    }
-  }
 }
 
 .rx-express-footer__info {
@@ -945,6 +951,10 @@ ul {
     }
   }
 
+  .rx-express-using__list li {
+    height: 45px;
+  }
+
 }
 
 @include media-breakpoint-down(sm) {
@@ -1052,7 +1062,7 @@ ul {
   }
 
   .rx-express-using__list {
-    margin-top: 10px;
+    margin-top: 16px;
   }
 
   .rx-express-human__h2,
@@ -1157,11 +1167,51 @@ ul {
     position: relative;
     left: 45px;
   }
+
+  .rx-express-using__list.rx-express-using__list-dark li:before {
+    top: 7px;
+  }
+
+  .rx-express-using__list.rx-express-using__list-dark li:after {
+    bottom: -36px;
+  }
+
+  .rx-express-footer__info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rx-express-footer__info-language {
+    padding-bottom: 20px;
+    width: 100%;
+    justify-content: center;
+    border-bottom: 1px solid #272d37;
+  }
+
+  .rx-express-footer__info-social {
+    padding-top: 20px;
+  }
+
+  .rx-express-footer__info-social-link {
+    margin-left: 24px;
+  }
+
+  .rx-express-footer__info-social-link:first-child {
+    margin-left: 0;
+  }
+
+  .rx-express-footer__copyright p {
+    text-align: center;
+  }
+
+  .rx-express-using__list li:after {
+    bottom: -37px;
+  }
 }
 
 @include media-breakpoint-down(xs) {
   body {
-    background: pink !important;
+    background: #ffffff !important;
   }
 
   .rx-express-header__firstBlock-btn button {
@@ -1218,11 +1268,207 @@ ul {
       height: auto;
     }
   }
+
+  .rx-express-header__main-comments {
+    top: 25px;
+
+    .rx-express-header__main-comments-left {
+      position: relative;
+      left: 10px;
+    }
+
+    .rx-express-header__main-comments-right {
+      position: relative;
+      right: 15px;
+    }
+  }
+
+  .rx-express-check__h3 {
+    font-size: 20px;
+    line-height: 26px;
+    padding-bottom: 40px;
+    margin-bottom: 0;
+  }
+
+  .rx-express-human__h2, .rx-express-ordinaryMoney__h2, .rx-express-facts__h2, .rx-express-advantages__h2, .rx-express-using__h2, .rx-express-checkFree__h2 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .rx-express-human__h2 {
+    margin-bottom: 0;
+  }
+
+  .rx-express-human__block-text p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .rx-express-human__left-top-block {
+    width: 110px;
+    top: 40px;
+  }
+
+  .rx-express-human__left-bottom-block {
+    bottom: auto;
+    top: 135px;
+    width: 100px;
+  }
+
+  .rx-express-human__right-top-block {
+    bottom: auto;
+    top: 110px;
+    width: 110px;
+  }
+
+  .rx-express-human__right-bottom-block {
+    width: 100px;
+    top: 40px;
+
+    p {
+      text-align: right;
+    }
+  }
+
+  .rx-express-ordinaryMoney h4 {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  .rx-express-ordinaryMoney__block-text p {
+    font-size: 12px;
+  }
+
+  .rx-express-ordinaryMoney__block-img img {
+    max-width: 70%;
+  }
+
+  .rx-express-check__step-text {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .rx-express-check__step-block-img {
+    margin-bottom: 0;
+  }
+
+  .rx-express-check__step-check-statement {
+    width: 57px;
+    height: 29px;
+  }
+
+  .rx-express-check__step-dispose-icon {
+    width: 47px;
+    height: 30px;
+  }
+
+  .rx-express-check__step-icon-mail {
+    width: 39px;
+    height: 37px;
+  }
+
+  .rx-express-check__step-check-code {
+    width: 60px;
+    height: 37px;
+  }
+
+  .rx-express-advantages__block-icon h5 {
+    font-size: 16px;
+  }
+
+  .rx-express-advantages__block-text p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .rx-express-using__list-h6 {
+    font-size: 16px;
+  }
+
+  .rx-express-using__list p {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .rx-express-checkFree p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .rx-express-checkFree__text {
+    span:first-child {
+      display: block;
+    }
+
+    span:last-child {
+      display: none;
+    }
+  }
+
+  .rx-express-logo-dark.rx-express-logo-dark__footer img {
+    max-width: 57%;
+    height: auto;
+  }
+
+  .rx-express-footer ul li {
+    height: auto;
+
+    a {
+      font-size: 12px;
+      line-height: 26px;
+    }
+  }
+
+  .rx-express-using__list {
+    padding: 43px 28px 45px 17px;
+  }
+
+  .rx-express-using__list li {
+    margin-bottom: 35px;
+  }
+
+  //.rx-express-using__list.rx-express-using__list-dark li:after {
+  //  bottom: -34px;
+  //}
+  //
+  //.rx-express-using__list li:after {
+  //  bottom: -34px;
+  //}
 }
 
+@media (min-width: 481px) and (max-width: 575.98px) {
+  .rx-express-header__main-comments .rx-express-header__main-comments-left {
+    left: -60px;
+  }
 
+  .rx-express-header__main-comments .rx-express-header__main-comments-right {
+    right: -60px;
+  }
+}
 
+@media (min-width: 425px) and (max-width: 480px) {
+  .rx-express-header__main-comments .rx-express-header__main-comments-left {
+    left: -25px;
+  }
 
+  .rx-express-header__main-comments .rx-express-header__main-comments-right {
+    right: -25px;
+  }
+}
+
+@media (max-width: 430px) {
+  .rx-express-using__list li {
+    height: 60px;
+  }
+
+  .rx-express-using__list li:after {
+    bottom: -30px;
+  }
+
+  .rx-express-using__list.rx-express-using__list-dark li:after {
+    bottom: -30px;
+  }
+}
 
 
 

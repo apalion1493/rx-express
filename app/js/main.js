@@ -25,6 +25,6 @@ $(window).width(function() {
         $('.rx-express-header__main-imgHuman-blockLeft').append('<img class="rx-express-header__main-imgHuman-img rx-express-header__main-imgHuman-left" src="img/hipster-mobil.png" alt="">');
         $('.rx-express-header__main-imgHuman-blockRight').append('<img class="rx-express-header__main-imgHuman-img rx-express-header__main-imgHuman-left" src="img/banker-mobil.png" alt="">');
         $('.rx-express-header__main-comments').append('<img class="rx-express-header__main-comments-left" src="img/left-comment__mobil.png" alt="">');
-        $('.rx-express-header__main-comments').append('<img class="rx-express-header__main-comments-left" src="img/right-comment__mobil.png" alt="">');
+        $('.rx-express-header__main-comments').append('<img class="rx-express-header__main-comments-right" src="img/right-comment__mobil.png" alt="">');
     }
 });
