@@ -332,13 +332,15 @@
   line-height: 42px;
   color: #272d37;
   text-align: center;
-  margin-bottom: 121px;
+  margin-bottom: 60px;
 }
 
 .rx-express-ordinaryMoney__block-img {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 65px;
+  margin-bottom: 65px;
 }
 
 .rx-express-ordinaryMoney__block-text {
@@ -921,6 +923,7 @@ ul {
 
   .rx-express-ordinaryMoney__block-img {
     margin-bottom: 42px;
+    margin-top: 0;
   }
 
   .rx-express-ordinaryMoney__block-text {
@@ -974,6 +977,7 @@ ul {
 
   .rx-express-header__main-btnContainer {
     flex-direction: column;
+    width: 100%;
 
     button {
       margin-bottom: 10px;
@@ -1146,6 +1150,12 @@ ul {
   .rx-express-header__main-imgHuman-blockRight {
     position: relative;
     top: 100px;
+    right: 45px;
+  }
+
+  .rx-express-header__main-imgHuman-blockLeft {
+    position: relative;
+    left: 45px;
   }
 }
 
@@ -1153,9 +1163,7 @@ ul {
   body {
     background: pink !important;
   }
-}
 
-@media (max-width: 575.98px) {
   .rx-express-header__firstBlock-btn button {
     width: 82px;
     font-size: 12px;
@@ -1165,8 +1173,53 @@ ul {
 
   .rx-express-header__main-h1 {
     font-size: 20px;
+    line-height: 27px;
+  }
+
+  .rx-express-header__main-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  .rx-express-header__main-btnContainer button {
+    max-width: 256px;
+    width: 100%;
+  }
+
+  .rx-express-header__main-imgHuman-blockLeft {
+    left: 0;
+    width: 111px;
+    height: 166px;
+
+    img {
+      position: absolute;
+      left: -35px;
+      top: 0;
+    }
+  }
+
+  .rx-express-header__main-imgHuman-blockRight {
+    right: 0;
+    width: 119px;
+    height: 178px;
+
+    img {
+      position: absolute;
+      bottom: 0;
+      right: -45px;
+    }
+  }
+
+  .rx-express-ordinaryMoney__block-img {
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
   }
 }
+
 
 
 
