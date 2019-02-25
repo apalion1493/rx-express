@@ -175,7 +175,7 @@
 
 .scrollbar-outer > .scroll-element.scroll-x {
   bottom: 0;
-  height: 12px;
+  height: 50px;
   left: 0;
   width: 100%;
 }
@@ -190,6 +190,7 @@
 .scrollbar-outer > .scroll-element.scroll-x .scroll-element_outer {
   height: 8px;
   top: 2px;
+  margin-top: 40px;
 }
 
 .scrollbar-outer > .scroll-element.scroll-y .scroll-element_outer {
@@ -234,6 +235,7 @@
 .scrollbar-outer > .scroll-content.scroll-scrollx_visible {
   top: -12px;
   margin-top: 12px;
+  padding-bottom: 50px;
 }
 
 .scrollbar-outer > .scroll-element.scroll-x .scroll-bar {
@@ -901,4 +903,10 @@
 
 .scrollbar-chrome > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_track {
   top: -19px;
+}
+
+@media (max-width: 767.98px) {
+  .scrollbar-outer > .scroll-element.scroll-x .scroll-element_outer {
+    margin-top: 0;
+  }
 }

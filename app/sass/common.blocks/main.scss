@@ -808,7 +808,6 @@
 .rx-express-facts__slider {
   overflow-y: visible;
   overflow-x: auto;
-  padding-bottom: 30px !important;
 }
 
 .rx-express-facts__slider-bottom-contentIcon {
@@ -1259,9 +1258,19 @@
   .rx-express-using__list li:after {
     bottom: -37px;
   }
+
+
 }
 
 @include media-breakpoint-down(xs) {
+
+  .rx-express-facts__slider-block-text {
+    line-height: 20px;
+  }
+
+  .rx-express-facts__slider-bottom-content {
+    margin-top: 10px;
+  }
 
   .rx-express-facts__slider-block {
     height: auto;
@@ -1481,14 +1490,6 @@
   .rx-express-using__list li {
     margin-bottom: 35px;
   }
-
-  //.rx-express-using__list.rx-express-using__list-dark li:after {
-  //  bottom: -34px;
-  //}
-  //
-  //.rx-express-using__list li:after {
-  //  bottom: -34px;
-  //}
 }
 
 @media (min-width: 481px) and (max-width: 575.98px) {
@@ -1524,4 +1525,3 @@
     bottom: -30px;
   }
 }
-
