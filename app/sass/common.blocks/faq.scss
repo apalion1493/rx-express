@@ -1,0 +1,159 @@
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+
+.rx-express-faq {
+  max-width: 969px;
+  margin-left: 66px;
+  margin-bottom: 130px;
+
+  .accordion dd,
+  .accordion__panel {
+    background-color:#ffffff;
+    font-size:1em;
+    line-height:1.5em;
+  }
+  .accordion p {
+    padding:1em 2em 1em 2em;
+  }
+
+  .accordion {
+    position:relative;
+    background-color: #ffffff;
+  }
+  .container {
+    max-width:960px;
+    margin:0 auto;
+    padding:2em 0 2em 0;
+  }
+  .accordionTitle,
+  .accordion__Heading {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    display:block;
+    text-decoration:none;
+    color: #858585;
+    background-color: #ffffff;
+    transition:background-color 0.5s ease-in-out;
+    padding-top: 20px;
+    &:before {
+      content: "+";
+      font-size: 40px;
+      font-weight: normal;
+      line-height: 26px;
+      float:left;
+      transition: transform 0.3s ease-in-out;
+      margin-right: 14px;
+    }
+    &:hover {
+      color: #1db137;
+      text-decoration: none;
+    }
+  }
+
+  .accordionTitle.is-collapsed.is-expanded {
+    color: #1db137;
+  }
+
+  .accordionTitleActive,
+  .accordionTitle.is-expanded {
+    &:before {
+      content: '-';
+      line-height: 22px;
+      font-size: 40px;
+    }
+  }
+  .accordionItem {
+    height:auto;
+    overflow:hidden;
+    //SHAME: magic number to allow the accordion to animate
+
+    max-height:50em;
+    transition:max-height 1s;
+
+
+    @media screen and (min-width:48em) {
+      max-height:15em;
+      transition:max-height 0.5s
+
+    }
+
+
+  }
+
+  .accordionItem.is-collapsed {
+    max-height:0;
+  }
+  .no-js .accordionItem.is-collapsed {
+    max-height: auto;
+  }
+  .animateIn {
+    animation: accordionIn 0.45s normal ease-in-out both 1;
+  }
+  .animateOut {
+    animation: accordionOut 0.45s alternate ease-in-out both 1;
+  }
+  @keyframes accordionIn {
+    0% {
+      opacity: 0;
+      transform:scale(0.9) rotateX(-60deg);
+      transform-origin: 50% 0;
+    }
+    100% {
+      opacity:1;
+      transform:scale(1);
+    }
+  }
+
+  @keyframes accordionOut {
+    0% {
+      opacity: 1;
+      transform:scale(1);
+    }
+    100% {
+      opacity:0;
+      transform:scale(0.9) rotateX(-60deg);
+    }
+  }
+}
+
+.rx-express-faq__h1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #272d37;
+  text-align: center;
+  margin-bottom: 68px;
+  display: block;
+}
+
+@include media-breakpoint-down(lg) {
+  .rx-express-faq {
+    margin-left: 0;
+  }
+
+  .rx-express-faq .accordionTitle, .rx-express-faq .accordion__Heading {
+    font-size: 16px;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+
+  .rx-express-faq .accordionTitle, .rx-express-faq .accordion__Heading {
+    font-size: 16px;
+  }
+
+  .rx-express-faq .accordion dd, .rx-express-faq .accordion__panel {
+    font-size: 14px;
+  }
+
+  .rx-express-faq .accordionTitle:before, .rx-express-faq .accordion__Heading:before {
+    content: "+";
+    font-size: 30px;
+  }
+
+  .rx-express-faq__h1 {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,108 @@
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+
+.rx-express-getCheck__text {
+  color: #838383;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 0;
+}
+
+.rx-express-kriptochek.rx-express-getCheck {
+  padding-bottom: 40px;
+}
+
+.rx-express-getCheck__mail {
+  padding-top: 20px;
+
+  input[type=checkbox] {display: none;}
+
+  input[type=checkbox] + label:before {
+    content: "\2713";
+    color: transparent;
+    display: inline-block;
+    border: 1px solid #d4d5d7;
+    font-size: 14px;
+    line-height: 15px;
+    margin: -5px 5px 0 0;
+    height: 15px;
+    width: 15px;
+    text-align: center;
+    vertical-align: middle;
+    transition: color ease .3s;
+    background: #ffffff;
+  }
+
+  input[type=checkbox]:checked + label:before {
+    color: #000;
+  }
+
+  label {
+    color: #525252;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 27px;
+  }
+
+  input[type=email] {
+    height: 46px;
+    border-radius: 4px;
+    border: 1px solid #d4d5d7;
+    background-color: #ffffff;
+  }
+}
+
+.rx-express-kriptochek__code-containerTable {
+  td.rx-express-getCheck__bold-text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #838383;
+  }
+}
+
+.rx-express-kriptochek__code-titleBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    color: #1db137;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 27px;
+    margin-bottom: 7px;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      text-decoration: none;
+      color: #1db137;
+    }
+  }
+
+  i {
+    background: url("../img/rx-express-kriptochek__btn-icon.png") no-repeat center;
+    background-size: 100% auto;
+    width: 19px;
+    height: 19px;
+    display: block;
+    margin-right: 7px;
+  }
+}
+
+.rx-express-kriptochek__code-containerForm.rx-express-getCheck__code-containerForm {
+  margin-bottom: 6px;
+}
+
+@include media-breakpoint-down(sm) {
+
+  .rx-express-getCheck {
+    .rx-express-kriptochek__bottom button.rx-express-btnGreen {
+      height: auto;
+    }
+  }
+
+}

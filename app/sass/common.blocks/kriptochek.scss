@@ -1,0 +1,252 @@
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+
+.rx-express-kriptochek {
+  background-color: #eceef1;
+  padding-top: 34px;
+  padding-bottom: 88px;
+  margin-bottom: 40px;
+}
+
+.rx-express-kriptochek__container.container {
+  max-width: 555px;
+}
+
+.rx-express-kriptochek__h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: center;
+  color: #272d37;
+  display: block;
+  margin-bottom: 35px;
+}
+
+.rx-express-kriptochek__title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #525252;
+}
+
+.rx-express-kriptochek__address-form {
+  display: flex;
+
+  button.btn.btn-primary {
+    max-width: 179px;
+    width: 100%;
+    border-radius: 0 4px 4px 0;
+    border: 1px solid #d4d5d7;
+    background-color: #f2f4f6;
+    height: 46px;
+    color: #1db137;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 27px;
+    display: flex;
+    justify-content: center;
+
+    .rx-express-kriptochek__btn-icon {
+      background: url("../img/rx-express-kriptochek__btn-icon.png") no-repeat center;
+      background-size: 100% auto;
+      width: 19px;
+      height: 19px;
+      display: block;
+      margin-right: 16px;
+      position: relative;
+      top: 5px;
+    }
+
+    &:hover, &:active {
+      background-color: #f2f4f6;
+      color: #1db137;
+      border: 1px solid #d4d5d7;
+    }
+  }
+
+  input {
+    height: 46px;
+    padding-left: 34px;
+    border-radius: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: 1px solid #d4d5d7;
+    border-right: none;
+  }
+}
+
+.rx-express-kriptochek__address-text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #838383;
+}
+
+.rx-express-kriptochek__status {
+  td {
+    border: 1px solid #d4d5d7;
+    background-color: #f2f4f6;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #838383;
+    padding: 10px !important;
+  }
+
+  .rx-express-kriptochek__status-td-right {
+    width: 178px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+.rx-express-kriptochek__qr-code {
+  min-width: 172px;
+  margin-left: 7px;
+}
+
+.rx-express-kriptochek__qr-code-container {
+  display: flex;
+  justify-content: center;
+  background: #ffffff;
+  border: 1px solid #d4d5d7;
+  height: 146px;
+  align-items: center;
+}
+
+.rx-express-kriptochek__code {
+  width: 100%;
+}
+
+.rx-express-kriptochek__code-container {
+  height: 143px;
+}
+
+.rx-express-kriptochek__code-containerForm {
+  margin-bottom: 7px;
+
+  input {
+    height: 46px;
+    border: 1px solid #d4d5d7;
+    background-color: #ffffff;
+    border-radius: 0;
+    padding-left: 34px;
+  }
+}
+
+.rx-express-kriptochek__code-containerTable {
+  table {
+    margin-bottom: 0;
+
+    td {
+      border: 1px solid #d4d5d7;
+      background-color: #f2f4f6;
+      padding: 10px !important;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 27px;
+      color: #838383;
+    }
+  }
+}
+
+.rx-express-kriptochek__bottom {
+  margin-top: 31px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  button.rx-express-btnGreen {
+    max-width: 360px;
+    width: 100%;
+    height: 46px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    background-color: #1db137;
+    margin-bottom: 23px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 27px;
+    color: #f5f4f5;
+  }
+
+  label {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #838383;
+
+    a {
+      color: #373c45;
+      text-decoration: underline;
+    }
+  }
+
+  input[type=checkbox] {display: none;}
+
+  input[type=checkbox] + label:before {
+    content: "\2713";
+    color: transparent;
+    display: inline-block;
+    border: 1px solid #d4d5d7;
+    font-size: 14px;
+    line-height: 15px;
+    margin: -5px 5px 0 0;
+    height: 15px;
+    width: 15px;
+    text-align: center;
+    vertical-align: middle;
+    transition: color ease .3s;
+    background: #ffffff;
+  }
+
+  input[type=checkbox]:checked + label:before {
+    color: #000;
+  }
+}
+
+.rx-express-kriptochek__section-code {
+  display: flex;
+}
+
+@media (max-width: 518px) {
+  .rx-express-kriptochek__address-form input,
+  .rx-express-kriptochek__code-containerForm input {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 505px) {
+  .rx-express-kriptochek__section-code {
+    flex-direction: column;
+  }
+
+  .rx-express-kriptochek__qr-code {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .rx-express-kriptochek__code-container {
+    height: auto;
+  }
+
+  .rx-express-kriptochek__status .rx-express-kriptochek__status-td-right {
+    width: auto;
+  }
+}
+
+@media (max-width: 505px) {
+  .rx-express-kriptochek__address-form {
+    flex-direction: column;
+  }
+
+  .rx-express-kriptochek__address-form button.btn.btn-primary {
+    max-width: 100%;
+    margin-top: 10px;
+  }
+
+  .rx-express-kriptochek__address-form input {
+    border-right: 1px solid #d4d5d7;
+  }
+}

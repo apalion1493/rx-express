@@ -95,7 +95,7 @@
     position: absolute;
     right: 587px;
     top: -148px;
-    background: url("../../img/rx-express-header__main-left.png") no-repeat center;
+    background: url("../img/rx-express-header__main-left.png") no-repeat center;
     background-size: 100% auto;
     width: 917px;
     height: 458px;
@@ -106,7 +106,7 @@
     position: absolute;
     left: 612px;
     top: -148px;
-    background: url("../../img/rx-express-header__main-right.png") no-repeat center;
+    background: url("../img/rx-express-header__main-right.png") no-repeat center;
     background-size: 100% auto;
     width: 937px;
     height: 468px;
@@ -175,28 +175,28 @@
 }
 
 .rx-express-check__step-check-statement {
-  background: url("../../img/check-statement.png") no-repeat center;
+  background: url("../img/check-statement.png") no-repeat center;
   background-size: 100% auto;
   width: 111px;
   height: 56px;
 }
 
 .rx-express-check__step-dispose-icon {
-  background: url("../../img/dispose-icon.png") no-repeat center;
+  background: url("../img/dispose-icon.png") no-repeat center;
   background-size: 100% auto;
   width: 86px;
   height: 55px;
 }
 
 .rx-express-check__step-icon-mail {
-  background: url("../../img/mail-icon.png") no-repeat center;
+  background: url("../img/mail-icon.png") no-repeat center;
   background-size: 100% auto;
   width: 66px;
   height: 63px;
 }
 
 .rx-express-check__step-check-code {
-  background: url("../../img/check-code.png") no-repeat center;
+  background: url("../img/check-code.png") no-repeat center;
   background-size: 100% auto;
   width: 112px;
   height: 69px;
@@ -257,7 +257,7 @@
   left: 140px;
 
   i {
-    background: url("../../img/rx-express-human__left-top-block.png") no-repeat center;
+    background: url("../img/rx-express-human__left-top-block.png") no-repeat center;
     background-size: 100% auto;
     position: absolute;
     right: -60px;
@@ -281,7 +281,7 @@
   }
 
   i {
-    background: url("../../img/rx-express-human__right-top-block.png") no-repeat center;
+    background: url("../img/rx-express-human__right-top-block.png") no-repeat center;
     background-size: 100% auto;
     position: absolute;
     left: -55px;
@@ -298,7 +298,7 @@
   bottom: 170px;
 
   i {
-    background: url("../../img/rx-express-human__left-bottom-block.png") no-repeat center;
+    background: url("../img/rx-express-human__left-bottom-block.png") no-repeat center;
     background-size: 100% auto;
     position: absolute;
     right: -45px;
@@ -315,7 +315,7 @@
   right: 15px;
 
   i {
-    background: url("../../img/rx-express-human__right-bottom-block.png") no-repeat center;
+    background: url("../img/rx-express-human__right-bottom-block.png") no-repeat center;
     background-size: 100% auto;
     position: absolute;
     left: -53px;
@@ -400,9 +400,9 @@
   flex-direction: column;
   border: 1px solid #e5e8eb;
   padding: 27px 14px 29px 14px;
-  min-width: 360px;
+  min-width: 31%;
   height: 360px;
-  margin-right: 30px;
+  margin-right: 40px;
 }
 
 .rx-express-facts__h5 {
@@ -422,11 +422,13 @@
 }
 
 .rx-express-facts__slider-bottom-content {
+  display: flex;
+  align-items: center;
   p {
     margin-bottom: 0;
     font-size: 12px;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 17px;
     color: #828282;
   }
 
@@ -499,7 +501,7 @@
 }
 
 .rx-express-advantages__block-icon-checkbox {
-  background: url("../../img/checkbox.png") no-repeat center;
+  background: url("../img/checkbox.png") no-repeat center;
   background-size: 100% auto;
   width: 25px;
   height: 21px;
@@ -697,7 +699,7 @@
 }
 
 .rx-express-checkFree__hint {
-  background: url("../../img/rx-express-checkFree__hint.png") no-repeat center;
+  background: url("../img/rx-express-checkFree__hint.png") no-repeat center;
   background-size: 100% auto;
   width: 21px;
   height: 21px;
@@ -765,7 +767,7 @@
 }
 
 .rx-express-footer__english-flag {
-  background: url("../../img/English-flag.svg") no-repeat center;
+  background: url("../img/English-flag.svg") no-repeat center;
   background-size: 100% auto;
   width: 30px;
   height: 21px;
@@ -804,27 +806,69 @@
 }
 
 .rx-express-facts__slider {
-  //overflow-y: visible;
-  //overflow-x: auto;
+  overflow-y: visible;
+  overflow-x: auto;
   padding-bottom: 30px !important;
-
-  //&::-webkit-scrollbar {
-  //  max-width: 1137px;
-  //  width: 100%;
-  //  height: 6px;
-  //  border-radius: 3px;
-  //  background-color: #e5e8eb;
-  //  margin-top: 50px;
-  //}
-  //
-  //&::-webkit-scrollbar-thumb {
-  //  width: 50px;
-  //  height: 6px;
-  //  border-radius: 3px;
-  //  background-color: #272d37;
-  //}
-
 }
+
+.rx-express-facts__slider-bottom-contentIcon {
+  min-width: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 14px;
+}
+
+.rx-express-facts__slider-bottom-forbes {
+  background: url("../img/Forbes-img.png") no-repeat center;
+  background-size: 100% auto;
+  width: 38px;
+  height: 38px;
+  display: block;
+}
+
+.rx-express-facts__slider-bottom-yahoo {
+  background: url("../img/Yahoo-img.png") no-repeat center;
+  background-size: 100% auto;
+  width: 38px;
+  height: 38px;
+  display: block;
+}
+
+.rx-express-facts__slider-bottom-wiki {
+  background: url("../img/Wikipedia-img.png") no-repeat center;
+  background-size: 100% auto;
+  width: 38px;
+  height: 38px;
+  display: block;
+}
+
+.rx-express-facts__slider-bottom-bloomberg {
+  background: url("../img/Bloomberg.png") no-repeat center;
+  background-size: 100% auto;
+  width: 38px;
+  height: 38px;
+  display: block;
+}
+
+.rx-express-facts__slider-bottom-cnn-news {
+  background: url("../img/CNN-News.png") no-repeat center;
+  background-size: 100% auto;
+  width: 38px;
+  height: 38px;
+  display: block;
+}
+
+.rx-express-header__main-imgHuman-blockLeft.rx-express-header__main-imgHuman-blockLeft-alternative {
+  position: relative;
+  left: 20px;
+}
+
+.rx-express-header__main-imgHuman-blockRight.rx-express-header__main-imgHuman-blockRight-alternative {
+  position: relative;
+  left: 140px;
+}
+
 
 @include media-breakpoint-down(lg) {
   .rx-express-human__left-top-block {
@@ -851,11 +895,20 @@
   .rx-express-facts__slider-block {
     height: auto;
   }
+
+  .rx-express-facts__slider-block {
+    min-width: 48%;
+    height: 360px;
+    margin-right: 34px;
+  }
 }
 
 @include media-breakpoint-down(md) {
-  body {
-    background: orange !important;
+
+  .rx-express-facts__slider-block {
+    min-width: 48%;
+    height: 380px;
+    margin-right: 26px;
   }
 
   .rx-express-check {
@@ -951,8 +1004,11 @@
 }
 
 @include media-breakpoint-down(sm) {
-  body {
-    background: yellow !important;
+
+  .rx-express-facts__slider-block {
+    min-width: 100%;
+    height: 380px;
+    margin-right: 26px;
   }
 
   .rx-express-logo-dark__footer {
@@ -1150,13 +1206,16 @@
     margin-top: 0;
   }
 
-  .rx-express-header__main-imgHuman-blockRight {
+  .rx-express-header__main-imgHuman-blockRight,
+  .rx-express-header__main-imgHuman-blockRight.rx-express-header__main-imgHuman-blockRight-alternative {
     position: relative;
     top: 100px;
     right: 45px;
+    left: auto;
   }
 
-  .rx-express-header__main-imgHuman-blockLeft {
+  .rx-express-header__main-imgHuman-blockLeft,
+  .rx-express-header__main-imgHuman-blockLeft.rx-express-header__main-imgHuman-blockLeft-alternative {
     position: relative;
     left: 45px;
   }
@@ -1203,8 +1262,9 @@
 }
 
 @include media-breakpoint-down(xs) {
-  body {
-    background: #ffffff !important;
+
+  .rx-express-facts__slider-block {
+    height: auto;
   }
 
   .rx-express-header__firstBlock-btn button {
@@ -1230,7 +1290,8 @@
     width: 100%;
   }
 
-  .rx-express-header__main-imgHuman-blockLeft {
+  .rx-express-header__main-imgHuman-blockLeft,
+  .rx-express-header__main-imgHuman-blockLeft.rx-express-header__main-imgHuman-blockLeft-alternative{
     left: 0;
     width: 111px;
     height: 166px;
@@ -1242,7 +1303,8 @@
     }
   }
 
-  .rx-express-header__main-imgHuman-blockRight {
+  .rx-express-header__main-imgHuman-blockRight,
+  .rx-express-header__main-imgHuman-blockRight.rx-express-header__main-imgHuman-blockRight-alternative{
     right: 0;
     width: 119px;
     height: 178px;
